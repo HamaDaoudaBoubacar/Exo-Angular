@@ -21,6 +21,11 @@
       "idProduct": 2,
       "text": "it taste very good",
       "id": 2
+    },
+    {
+      "idProduct": 2,
+      "text": "c'etait bon j'ai aimé",
+      "id": 3
     }
   ]
 }
