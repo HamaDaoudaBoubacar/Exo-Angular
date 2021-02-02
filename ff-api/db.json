@@ -1,0 +1,26 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "pomme",
+      "categories": "fruit"
+    },
+    {
+      "name": "orange",
+      "categories": "fruit",
+      "id": 2
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "idProduct": 1,
+      "text": "delicieuse, c'est de la qualité"
+    },
+    {
+      "idProduct": 2,
+      "text": "it taste very good",
+      "id": 2
+    }
+  ]
+}
