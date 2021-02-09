@@ -9,6 +9,11 @@
       "name": "orange",
       "categories": "fruit",
       "id": 2
+    },
+    {
+      "name": "mangue",
+      "categories": "fruit",
+      "id": 3
     }
   ],
   "comments": [
@@ -26,6 +31,11 @@
       "idProduct": 2,
       "text": "c'etait bon j'ai aimé",
       "id": 3
+    },
+    {
+      "idProduct": 1,
+      "text": "hmn le meilleur que j'ai jamais mangé",
+      "id": 4
     }
   ]
 }
