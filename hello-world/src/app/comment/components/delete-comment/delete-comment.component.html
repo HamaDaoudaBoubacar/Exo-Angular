@@ -1,0 +1,18 @@
+<form [formGroup]="commentForm" (ngSubmit)="onSubmit(commentForm.value)">
+    <h2 mat-dialog-title>Are you Sure ?</h2>
+    <mat-dialog-content class="mat-typography">     
+            <div style="color:red">
+                    <mat-icon matPrefix>sentiment_dissatisfied</mat-icon>
+                    <mat-icon matPrefix>sentiment_very_dissatisfied</mat-icon>
+                    <mat-icon matPrefix>sentiment_dissatisfied</mat-icon>
+                    <mat-icon matPrefix>sentiment_very_dissatisfied</mat-icon>
+                    <mat-icon matPrefix>sentiment_dissatisfied</mat-icon>
+                    <mat-icon matPrefix>sentiment_very_dissatisfied</mat-icon>
+            </div>
+    </mat-dialog-content>
+
+    <mat-dialog-actions align="end">
+        <button mat-button mat-dialog-close>No</button>
+        <button mat-button type="submit" cdkFocusInstall [disabled]="!commentForm.valid">Yes</button>
+    </mat-dialog-actions>
+</form>

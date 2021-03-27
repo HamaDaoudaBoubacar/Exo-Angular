@@ -1,0 +1,28 @@
+
+<form [formGroup]="productForm" (ngSubmit)="onSubmit(productForm.value)">
+
+    <h2 mat-dialog-title>{{titre}}</h2>
+    <mat-dialog-content class="mat-typography">
+
+        <div>
+            <mat-form-field appearance="fill">
+                <mat-label>Product Name</mat-label>
+                <input matInput placeholder="orange" type="text" formControlName="name">
+                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field appearance="fill">
+                <mat-label>Categorie</mat-label>
+                <input matInput placeholder="fruit" type="text" formControlName="categories">
+                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+            </mat-form-field>
+        </div>
+
+
+    </mat-dialog-content>
+    <mat-dialog-actions align="end">
+        <button mat-button mat-dialog-close>Cancel</button>
+        <button mat-button type="submit" cdkFocusInstall [disabled]="!productForm.valid">{{formAction}}</button>
+    </mat-dialog-actions>
+</form>

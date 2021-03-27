@@ -2,40 +2,50 @@
   "products": [
     {
       "id": 1,
-      "name": "pomme",
-      "categories": "fruit"
+      "name": "Pomme",
+      "categories": "Fruit"
     },
     {
-      "name": "orange",
-      "categories": "fruit",
-      "id": 2
+      "id": 2,
+      "name": "Orange",
+      "categories": "Fruit"
     },
     {
-      "name": "mangue",
-      "categories": "fruit",
-      "id": 3
+      "id": 3,
+      "name": "Mangue",
+      "categories": "Fruit"
+    },
+    {
+      "name": "carotte",
+      "categories": "légume",
+      "id": 4
     }
   ],
   "comments": [
     {
       "id": 1,
-      "idProduct": 1,
-      "text": "delicieuse, c'est de la qualité"
+      "text": "delicieuse, c'est de la qualité",
+      "idProduct": "1"
     },
     {
-      "idProduct": 2,
+      "id": 2,
       "text": "it taste very good",
-      "id": 2
+      "idProduct": "2"
     },
     {
-      "idProduct": 2,
+      "id": 3,
       "text": "c'etait bon j'ai aimé",
-      "id": 3
+      "idProduct": "2"
     },
     {
-      "idProduct": 1,
+      "id": 4,
       "text": "hmn le meilleur que j'ai jamais mangé",
-      "id": 4
+      "idProduct": "1"
+    },
+    {
+      "id": 5,
+      "text": "c'est trop bon",
+      "idProduct": "2"
     }
   ]
 }
