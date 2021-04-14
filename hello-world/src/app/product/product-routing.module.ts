@@ -13,12 +13,14 @@ const routes: Routes = [
       {
         path: '',
         pathMatch: 'full',
-        redirectTo: 'products'
+        children: [
+          {
+            path: '',
+            component: ProductListComponent
+          }
+        ]
       },
-      {
-        path: 'products',
-        component: ProductListComponent
-      },
+      
       {
         path: 'products/:id',
         component: ProductDetailComponent

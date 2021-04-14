@@ -13,11 +13,12 @@ const routes: Routes = [
       {
         path: '',
         pathMatch: 'full',
-        redirectTo: 'comments'
-      },
-      {
-        path: 'comments',
-        component: CommentListComponent
+        children: [
+          {
+            path: '',
+            component: CommentListComponent
+          }
+        ]
       },
       {
         path: 'comments/:id',
