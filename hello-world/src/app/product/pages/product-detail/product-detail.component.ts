@@ -13,7 +13,7 @@ export class ProductDetailComponent implements OnInit {
 
   productId: number;
 
-  product$: Observable<Product>;
+  products$: Observable<Product>;
   toto: string[] = ["id", "name", "categories"];
 
   constructor(private _activateRoute: ActivatedRoute,
@@ -28,7 +28,7 @@ export class ProductDetailComponent implements OnInit {
   }
 
   fetchData(id: number): void {
-    this.product$ = this._productService.getById(id);
+    this.products$ = this._productService.getById(id);
   }
 
 

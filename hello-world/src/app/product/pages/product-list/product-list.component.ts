@@ -17,7 +17,7 @@ export class ProductListComponent implements OnInit {
 
   products$: Observable<Product[]>;
   static selected: Product;
-  displayedColumns: string[] = ["id", "name", "categories", "update", "delete"];
+  displayedColumns: string[] = ["id", "name", "categories", "update", "delete", "detail"];
 
   constructor(private _productService: ProductService, public dialog: MatDialog) { }
 

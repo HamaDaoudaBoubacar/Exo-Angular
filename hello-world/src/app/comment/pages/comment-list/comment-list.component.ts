@@ -17,7 +17,7 @@ export class CommentListComponent implements OnInit {
   comments$: Observable<Comment[]>;
   static selected: Comment;
 
-  displayedColumns: string[] = ["id", "text", "idProduct", "update", "delete"];
+  displayedColumns: string[] = ["id", "text", "idProduct", "update", "delete", "detail"];
 
   constructor(private _commentService: CommentService, public dialog: MatDialog) { }
 
