@@ -1,6 +1,18 @@
-<p>comment-detail works!</p>
+<h2 class="tit">Detail</h2>
 
-{{commentId}}
+<table border="2">
+    <thead>
+        <tr>
+            <th class="titre">Commentaire</th>
+            <th class="titre">Id Product</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{comment$.text}}</td>
+            <td>{{comment$.idProduct}}</td>
+        </tr>
+    </tbody>
+</table>
 
 
-{{comment$ | async | json}}

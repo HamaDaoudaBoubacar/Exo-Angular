@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Observable } from 'rxjs';
 import { CommentService } from 'src/app/core/services/http/comment.service';
 import { Comment } from 'src/app/models/comment';
 
@@ -13,7 +12,7 @@ export class CommentDetailComponent implements OnInit {
 
   commentId: number;
 
-  comment$: Observable<Comment>;
+  comment$: Comment;
   toto: string[] = ["id", "text", "idProduct"];
 
   constructor(private _activateRoute: ActivatedRoute,
@@ -28,7 +27,7 @@ export class CommentDetailComponent implements OnInit {
   }
 
   fetchData(id: number): void {
-    this.comment$ = this._commentService.getById(id);
+    this._commentService.getById(id).subscribe(comment =>(this.comment$=comment));
   }
 
 

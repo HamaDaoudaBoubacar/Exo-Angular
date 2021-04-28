@@ -31,4 +31,8 @@ export class ProductService {
   delete(product: Product): Observable<Product> {
     return this._httpClient.delete<Product>(this.endPoint + "/" + product.id);
   }
+
+  /*detail(product: Product): Observable<Product> {
+    return this._httpClient.get<Product>(this.endPoint + "/" + product.id);
+  }*/
 }

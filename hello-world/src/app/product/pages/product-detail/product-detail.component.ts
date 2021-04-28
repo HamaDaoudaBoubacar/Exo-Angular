@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Observable } from 'rxjs';
 import { ProductService } from 'src/app/core/services/http/product.service';
 import { Product } from 'src/app/models/product';
 
@@ -13,7 +12,7 @@ export class ProductDetailComponent implements OnInit {
 
   productId: number;
 
-  products$: Observable<Product>;
+  products$: Product;
   toto: string[] = ["id", "name", "categories"];
 
   constructor(private _activateRoute: ActivatedRoute,
@@ -28,7 +27,8 @@ export class ProductDetailComponent implements OnInit {
   }
 
   fetchData(id: number): void {
-    this.products$ = this._productService.getById(id);
+    this._productService.getById(id).subscribe(product =>(this.products$=product));
+    //console.log(this.products$);
   }
 
 
