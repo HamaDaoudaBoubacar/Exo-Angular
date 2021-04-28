@@ -1,0 +1,13 @@
+Comments
+GET: https://app-exo-angular.herokuapp.com/comments
+GET+id: https://app-exo-angular.herokuapp.com/comments/1
+POST: https://app-exo-angular.herokuapp.com/comments
+DELETE: https://app-exo-angular.herokuapp.com/comments/5
+PUT: https://app-exo-angular.herokuapp.com/comments/2
+
+Products
+GET: https://app-exo-angular.herokuapp.com/products
+GET+id: https://app-exo-angular.herokuapp.com/products/1
+POST:https://app-exo-angular.herokuapp.com/products
+DELETE: https://app-exo-angular.herokuapp.com/products/5
+PUT: https://app-exo-angular.herokuapp.com/products/2
