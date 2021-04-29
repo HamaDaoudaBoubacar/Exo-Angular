@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "exo-angular-130b8": {
+      "hosting": {
+        "hello-world": [
+          "exo-angular-130b8"
+        ]
+      }
+    }
+  }
+}
